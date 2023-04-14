@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+       }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #14ec7c;
+            min-width: 90%;
+            box-shadow: 0px 8px 16px 0px rgba(117, 186, 118, 0.2);
+            z-index: 1;
+            padding: 1rem;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(70, 144, 70);
+            padding: 8px;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            /* position: fixed; */
+            background-color: greenyellow;
+            width: 100%;
+            overflow: auto;
+        }        
+        .item {
+            padding: 1.5rem;
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            font-size: 1.5rem;
+        }
+        .list1 {
+            padding: 2rem;         
+            justify-content: center;
+            align-items: center;
+            height: 113px;
+            border-bottom: 3px solid black;
+        }
+        .list a {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: larger;
+        }
+        .list1:hover {
+            background-color: rgb(122, 196, 11);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Locum Kenya Dashboard</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">My Profile</a>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> View Profile</a>
+                        <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i><br> Edit Profile</a>
+                        <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i><br> Get Help?</a>
+                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="list">
+            <div class="list1"> <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></div>
+            <div class="list1"> <a href="#"><i class="fa fa-upload" aria-hidden="true"></i> Upload Documents</a></div>
+            <div class="list1"> <a href="#"><i class="fa fa-stethoscope" aria-hidden="true"></i> Vouch Locums</a></div>
+            <div class="list1"> <a href="#"><i class="fa fa-spinner" aria-hidden="true"></i> Pending </a></div>
+            <div class="list1"> <a href="#"><i class="fa fa-check" aria-hidden="true"></i> Successful Locum(s)</a></div>
+        </div>
+        <div class="item">            
+              Congratulations you are some steps away to start applying for jobs <i class="fa fa-smile-o" aria-hidden="true"></i>
+                You are required to upload your Documents for Approval then from there you will start applying for jobs.
+                The Approval process takes around 2 days or less.
+                Go ahead and upload your Documents.           
+           
+        </div>
+      
+        <footer>
+            <p> All Rights Reserved &copy; 2023</p>
+        </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .profile-section {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .profile-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .info-section {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin-left: 20px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Profile Page</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <section class="container">
+        <div class="profile-section">
+            <img src="profile-pic.jpg" alt="Profile Picture">
+            <h2>John Doe</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>Phone: 555-1234</p>
+        </div>
+        <div class="info-section">
+            <h2>Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac blandit massa, at aliquet nisi. Integer
+                iaculis enim sit amet consectetur imperdiet. Vestibulum aliquet felis vitae tellus feugiat semper.
+                Aliquam blandit erat vitae velit varius, quis malesuada nulla convallis. Aenean luctus elit vel metus
+                volutpat, at bibendum mi varius. Fusce dictum suscipit justo in convallis. Maecenas sollicitudin, quam
+                eget viverra consequat, metus mi fermentum quam, vel congue nunc est in mi. Suspendisse dignissim,
+                turpis ac volutpat mattis, nibh ipsum dignissim nibh, vitae tincidunt est tortor vel purus. Proin
+                consectetur malesuada fringilla.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html> -->

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locum Kenya</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: #65eda7;
+    }
+    nav {
+        display: flex;
+        justify-content: right;
+        gap: 2rem;
+    }
+    nav a ,.content a{
+        background-color: aqua;
+        margin: 1rem 2rem 1rem 0;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: .6rem 1.5rem;
+        border-radius: 6px;
+    }
+    nav a:first-child {
+        border: 2px solid black;
+        background-color: aqua;
+    }  
+    h2{
+        text-align: center;
+        color: rgb(69, 69, 248);
+        font-family: fantasy;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+
+    img {
+        height: 100%;
+        width: 65%;
+        border-radius: 12px 50px 12px 50px;
+        overflow: auto;
+        /* z-index: 1; */
+        margin: 1rem 1rem 1rem 1.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    .content {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        max-width: 550px;
+        padding: 1rem;
+    }
+    .footer {
+        background-color: rgb(70, 144, 70);
+        position: fixed;
+        bottom: 0;
+        width: 97%;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .details{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content:space-evenly;
+    }
+    .details a{
+       text-decoration: none;
+       color: aliceblue;
+    }
+    .footer span{
+        
+        color:rgb(10, 9, 9);
+        padding: 1rem;
+    }
+</style>
+
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <h2>We are Locum Kenya</h2>
+    <div class="container">
+        
+        <div class="image">
+            <img src="doc2.jpg" alt="Health workers">
+        </div>
+        <div class="content">
+            <p>We are a Kenyan based Startup helping hundreds of unemployed doctors find work as well as part-ime jobs.
+            </p><br>
+            <p>We've partnered with multiple Hospitals and established clinics in order to bridge the gap between health
+                workers and patients.</p><br>
+                <p></p>
+                <p>Want get linked with top Hospitals and clinics as well as earn a high rate?
+                     </p><br>
+                <p>Join us Today.</p><br><a href="signup.html">Apply</a>
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="details">
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Help Center</a>
+        </div>
+        
+        <span>All Rights Reserved &copy; 2023 Locum Kenya</span>
+    </footer>
+
+</body>
+
+</html>
